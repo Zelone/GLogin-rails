@@ -1,0 +1,2 @@
+class Cu < ApplicationRecord
+end

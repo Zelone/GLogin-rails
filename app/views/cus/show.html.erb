@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cu.name %>
+</p>
+
+<p>
+  <strong>Emails:</strong>
+  <%= @cu.emails %>
+</p>
+
+<p>
+  <strong>Gtoken:</strong>
+  <%= @cu.gtoken %>
+</p>
+
+<p>
+  <strong>Acctoken:</strong>
+  <%= @cu.acctoken %>
+</p>
+
+<p>
+  <strong>Idtoken:</strong>
+  <%= @cu.idtoken %>
+</p>
+
+<p>
+  <strong>Refreshtoken:</strong>
+  <%= @cu.refreshtoken %>
+</p>
+
+<%= link_to 'Edit', edit_cu_path(@cu) %> |
+<%= link_to 'Back', cus_path %>

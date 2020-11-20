@@ -1,0 +1,47 @@
+<%= form_with(model: cu, local: true) do |form| %>
+  <% if cu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cu.errors.count, "error") %> prohibited this cu from being saved:</h2>
+
+      <ul>
+        <% cu.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :emails %>
+    <%= form.text_field :emails %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gtoken %>
+    <%= form.text_field :gtoken %>
+  </div>
+
+  <div class="field">
+    <%= form.label :acctoken %>
+    <%= form.text_field :acctoken %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idtoken %>
+    <%= form.text_field :idtoken %>
+  </div>
+
+  <div class="field">
+    <%= form.label :refreshtoken %>
+    <%= form.text_field :refreshtoken %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
